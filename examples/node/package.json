@@ -1,0 +1,8 @@
+{
+    "type": "module",
+    "scripts": {
+        "umd": "node main.cjs",
+        "esm": "node main.js",
+        "all": "yarn umd && yarn esm"
+    }
+}

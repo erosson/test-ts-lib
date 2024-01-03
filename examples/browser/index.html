@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        <script> loading does work, with two caveats:
+        - it's only useful for side effects. exports don't automatically end up in `window` or anything
+        - `type="module"` is required
+    -->
+    <!-- <script type="module" src="./dist/main.js"></script> -->
+
+    <script type="module">
+        // this is new! requires `type="module"`
+        import * as main from './dist/main.js'
+
+        const out = { success: 'bar' === main.foo }
+        console.log(out)
+        document.body.innerText = JSON.stringify(out)
+    </script>
+</head>
+
+<body>
+    loading... <br>
+    (if this takes more than a few seconds, something's broken)
+</body>
+
+</html>

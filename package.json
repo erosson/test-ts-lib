@@ -1,0 +1,17 @@
+{
+  "name": "test-ts-lib",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.ts",
+  "author": "Evan Rosson <git@erosson.org>",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "lint": "tsc --noEmit",
+    "build": "yarn lint && tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
