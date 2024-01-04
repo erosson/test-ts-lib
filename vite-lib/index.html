@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <a href="/docs/index.html">docs</a>
   <div id="app"></div>
   <script type="module" src="/src/main.ts"></script>
   <script type="module">
@@ -17,7 +18,7 @@
     console.info("To try out the library in this console, use %cwindow.ViteLib", 'font-family: monospace; font-weight: bold;')
     const out = { success: 'bar' === main.foo }
     console.log(out, main.hoge)
-    document.body.innerText = JSON.stringify(out)
+    document.getElementById('app').innerText = JSON.stringify(out)
   </script>
 </body>
 

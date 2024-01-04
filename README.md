@@ -1,4 +1,4 @@
-# test-ts-lib
+# [test-ts-lib](https://github.com/erosson/test-ts-lib)
 
 Example typescript library that runs in both the browser and node.
 

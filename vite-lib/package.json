@@ -2,6 +2,9 @@
   "name": "vite-lib",
   "private": true,
   "version": "0.0.0",
+  "author": "Evan Rosson <git@erosson.org>",
+  "repository": "https://github.com/erosson/test-ts-lib",
+  "license": "GPL-3.0",
   "type": "module",
   "files": [
     "dist"
@@ -15,9 +18,9 @@
     }
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "yarn docs && vite",
     "build": "tsc && vite build",
-    "doc": "typedoc src/main.ts --out public/docs",
+    "docs": "typedoc src/main.ts --out public/docs",
     "preview": "vite preview"
   },
   "devDependencies": {
