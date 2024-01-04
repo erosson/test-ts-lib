@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+  <script type="module">
+    import * as main from '/src/main.ts'
+    window.ViteLib = main
+    console.info("To try out the library in this console, use %cwindow.ViteLib", 'font-family: monospace; font-weight: bold;')
+    const out = { success: 'bar' === main.foo }
+    console.log(out, main.hoge)
+    document.body.innerText = JSON.stringify(out)
+  </script>
+</body>
+
+</html>

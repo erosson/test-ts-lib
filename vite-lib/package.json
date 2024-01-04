@@ -1,0 +1,28 @@
+{
+  "name": "vite-lib",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vite-lib.umd.cjs",
+  "module": "./dist/vite-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "doc": "typedoc src/main.ts --out public/docs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typedoc": "^0.25.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
+  }
+}
